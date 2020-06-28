@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AddMoney</servlet-name>
+        <servlet-class>controller.AddMoney</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DebitMoney</servlet-name>
+        <servlet-class>controller.DebitMoney</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMoney</servlet-name>
+        <url-pattern>/AddMoney</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DebitMoney</servlet-name>
+        <url-pattern>/DebitMoney</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
